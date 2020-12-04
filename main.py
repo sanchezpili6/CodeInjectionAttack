@@ -5,15 +5,20 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
-@app.route('/hello', methods=['POST'])
+    try:
+        return render_template('index.html')
+    except Exception as e:
+        print("Error: ", e)
+        return "Hello world"
 
+@app.route('/hello', methods=['POST'])
 def params():
     a = request.form['a']
     b = request.form['b']
     c = request.form['c']
     sq = sqrt(b*b - 4*a*c)
     return (a,b,c)
+
 if __name__ == '__main__':
     app.run(host = '0.0.0.0', port = 8080)
 
