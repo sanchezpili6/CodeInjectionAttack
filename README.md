@@ -30,6 +30,8 @@ $ sudo snap install pycharm-community --classic
 - Pega el URL que copiaste y elige el directorio donde quieres guardarlo
 - Click en clonar
 
+Si ya tenías abierto PyCharm y no apareció el "Check out project from Version Control", entonces puedes poner el el buscador de PyCharm "git", darle click en la opción de clonar y ahí pegar el URL
+
 ### Correr programa
 - Abre la terminal dentro del proyecto
 - make build
