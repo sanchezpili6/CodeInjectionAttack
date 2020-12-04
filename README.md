@@ -35,11 +35,15 @@ Si ya tenías abierto PyCharm y no apareció el "Check out project from Version 
 ### Correr programa
 - Abre la terminal dentro del proyecto
 - make build
-- make run
+- make shell
 - puedes usar el programa como se supone que funciona, o puedes meter en el parámetro:
 
 ```sh
 __import__('os').system('mkdir dirPrueba')
 ```
-
+- revisa la carpeta donde está el proyecto, se debe haber creado una carpeta llamada dirPrueba. 
+- si quieres borrar esa carpeta puedes meter un: 
+```sh
+__import__('os').system('rmdir dirPrueba')
+```
 
