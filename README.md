@@ -29,7 +29,15 @@ $ sudo snap install pycharm-community --classic
 - Selecciona la opción de Git
 - Pega el URL que copiaste y elige el directorio donde quieres guardarlo
 - Click en clonar
-Dark
-### Navegando por la aplicación
+
+### Correr programa
+- Abre la terminal dentro del proyecto
+- make build
+- make run
+- puedes usar el programa como se supone que funciona, o puedes meter en el parámetro:
+
+```sh
+__import__('os').system('mkdir dirPrueba')
+```
 
 
