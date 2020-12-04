@@ -13,7 +13,7 @@ def getSqrt(b, a, c):
     try:
         return sqrt(b*b - 4*a*c)
     except:
-        return "Not"
+        return "None"
 
 @app.route('/')
 def index():
