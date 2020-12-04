@@ -36,6 +36,7 @@ Si ya tenías abierto PyCharm y no apareció el "Check out project from Version 
 - Abre la terminal dentro del proyecto
 - make build
 - make shell
+- python main.py
 - puedes usar el programa como se supone que funciona, o puedes meter en el parámetro:
 
 ```sh
