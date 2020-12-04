@@ -41,8 +41,8 @@ Si ya tenías abierto PyCharm y no apareció el "Check out project from Version 
 ```sh
 __import__('os').system('mkdir dirPrueba')
 ```
-- revisa la carpeta donde está el proyecto, se debe haber creado una carpeta llamada dirPrueba. 
-- si quieres borrar esa carpeta puedes meter un: 
+Va a decirte que tiene un error, ahora checa la carpeta donde está el proyecto, se debe haber creado una carpeta llamada dirPrueba. 
+Si quieres borrar esa carpeta puedes meter un: 
 ```sh
 __import__('os').system('rmdir dirPrueba')
 ```
