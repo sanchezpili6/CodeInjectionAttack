@@ -1,10 +1,26 @@
 from math import sqrt
-import web
+from flask import Flask, render_template, request
+
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return render_template('index.html')
+@app.route('/hello', methods=['POST'])
+
+def params():
+    a = request.form['a']
+    b = request.form['b']
+    c = request.form['c']
+    sq = sqrt(b*b - 4*a*c)
+    return (a,b,c)
+if __name__ == '__main__':
+    app.run(host = '0.0.0.0', port = 8080)
 
 print("Hello, welcome to quadratic solver")
-a = input("Type value for a: ")
-b = input("Type value for b: ")
-c = input("Type value for c: ")
+a = request.form['a']
+b = request.form['b']
+c = request.form['c']
 print(a, b, c)
 
 sq = sqrt(b*b - 4*a*c)

@@ -10,6 +10,6 @@ run:
 	-it codeinjection python main.py
 
 shell:
-	sudo docker run -it -v $(shell pwd):/usr/src/app codeinjection bash
+	sudo docker run -it -p 8080:8080 -v $(shell pwd):/usr/src/app codeinjection bash
 
 

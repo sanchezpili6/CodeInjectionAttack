@@ -8,7 +8,7 @@ WORKDIR /usr/src/app
 RUN apt-get update
 RUN apt install python-pip -y
 RUN apt-get -y install apt-utils
-RUN apt-get -y install python python-tk python-pmw python-pil
+
 
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt

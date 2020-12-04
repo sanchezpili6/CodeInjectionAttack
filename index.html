@@ -1,17 +1,18 @@
-$def with (output)
+<!DOCTYPE html>
 <html>
 <body>
-<h1> I'm vulnerable to Python Code Injection! </h1>
 
-<b>Vulnerable GET parameters:</b> param1,param2<br>
-<b>Vulnerable POST parameters:</b> param1,param2<br>
-<b>Vulnerable Cookie:</b> c1<br>
-<br>
-Have fun!<br>
-<br>
--@sethsec, @decidedlygray
-<br>
-<br>
-$output
+<h1>Hello, welcome to quadratic solver</h1>
+
+<form action="/params" method="post">
+  <label for="a">a:</label>
+  <input type="text" id="a" name="a"><br><br>
+  <label for="b">b:</label>
+  <input type="text" id="b" name="b"><br><br>
+    <label for="c">c:</label>
+  <input type="text" id="c" name="c"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
 </body>
 </html>
